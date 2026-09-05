@@ -100,8 +100,8 @@ const itinerary = [
       },
       {
         time: "16:00",
-        title: "Tarde na praia ou caminhada por Los Enebrales (na praia)",
-        text: "Escolher entre descansar na praia ou ir para uma zona mais calma e menos movimentada, centros por perto como lagoh shopping center ou Los Arcos.",
+        title: "Tarde na praia, caminhada por Los Enebrales (na praia)",
+        text: "Escolher entre descansar na praia ou ir para uma zona mais calma e menos movimentada.",
         icon: Palmtree,
       },
       {
@@ -211,12 +211,12 @@ const itinerary = [
       {
         time: "15:30",
         title: "Catedral Giralda (17€), ",
-        text: "Ver de fora ou passear por arredores.",
+        text: "Ver de fora ou passear por arredores existem centros por perto como Lagoh shopping center ou Los Arcos.",
         icon: Compass,
       },
       {
         time: "18:30",
-        title: "Mercado de Triana + rio Guadalquivir",
+        title: "Mercado de Triana (outro lado do rio) e ver rio Guadalquivir",
         text: "À tarde, vale a pena ir para a zona de Triana e ver o rio no fim do dia.",
         icon: Navigation,
       },
