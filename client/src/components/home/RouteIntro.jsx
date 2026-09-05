@@ -16,10 +16,6 @@ export function RouteIntro({ copied, onCopyRoute }) {
           <p>
             Primeiro o corpo desacelera junto ao Atlântico. Depois, já com a pele salgada, a viagem sobe para o calor, os azulejos e as noites longas de Sevilha.
           </p>
-          <button className="inline-link" type="button" onClick={onCopyRoute}>
-            {copied ? <Check size={15} /> : <Copy size={15} />}
-            {copied ? "Roteiro copiado" : "Copiar resumo do roteiro"}
-          </button>
         </div>
       </div>
 
