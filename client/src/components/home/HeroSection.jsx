@@ -6,7 +6,7 @@ export function HeroSection() {
     <section className="hero container" aria-labelledby="hero-title">
       <div className="hero-copy reveal-up">
         <div className="eyebrow">
-          <span className="eyebrow-line" /> Caderno de viagem · Andaluzia 2024
+          <span className="eyebrow-line" /> Plano de viagem 
         </div>
         <h1 id="hero-title">
           Do sal ao sol
