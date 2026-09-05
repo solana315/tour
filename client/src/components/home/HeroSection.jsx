@@ -11,10 +11,10 @@ export function HeroSection() {
         <h1 id="hero-title">
           Do sal ao sol
           <br />
-          <em>sem perder o sul.</em>
+          <em>sem perder o caminho.</em>
         </h1>
         <p className="hero-lede">
-          Um roteiro de cinco dias entre o Atlântico de Punta Umbría e as fachadas quentes de Sevilha — feito para andar, comer bem e deixar a luz decidir o caminho.
+          Um roteiro de cinco dias entre o Atlântico de Punta Umbría e as fachadas quentes de Sevilha, feito para andar, comer bem e aproveitar.
         </p>
         <div className="hero-actions">
           <button
@@ -29,8 +29,8 @@ export function HeroSection() {
           </a>
         </div>
         <div className="hero-meta">
-          <IconPill icon={Waves}>3 dias de costa</IconPill>
-          <IconPill icon={Sparkles}>2 dias de cidade</IconPill>
+          <IconPill icon={Waves}>2 dias e meio de costa</IconPill>
+          <IconPill icon={Sparkles}>2 dias e meio de cidade</IconPill>
           <IconPill icon={Sun}>104 km de transição</IconPill>
         </div>
       </div>
