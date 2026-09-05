@@ -21,10 +21,23 @@ import { Footer } from "../components/home/Footer";
 const images = {
   punta1: "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=80",
   punta2: "https://images.unsplash.com/photo-1500375592092-40eb2168fd21?auto=format&fit=crop&w=1600&q=80",
-  punta3: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1600&q=80", 
-sevilla1: "https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=1600&q=80", 
-sevilla2: "https://images.unsplash.com/photo-1531572753322-ad063cecc140?auto=format&fit=crop&w=1600&q=80", 
+  punta3: "https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1600&q=80",
+  sevilla1: "https://images.unsplash.com/photo-1509840841025-9088ba78a826?auto=format&fit=crop&w=1600&q=80",
+  sevilla2: "https://images.unsplash.com/photo-1531572753322-ad063cecc140?auto=format&fit=crop&w=1600&q=80",
 };
+
+const mapsLink = (nome) =>
+  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(nome)}`;
+
+const MapsLinkedName = ({ nome, children }) => (
+  <a
+    href={mapsLink(nome)}
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    {children ?? nome}
+  </a>
+);
 
 const itinerary = [
   {
@@ -63,7 +76,23 @@ const itinerary = [
       },
       {
         time: "21:30",
-        title: "Jantar Meson Diego / Al Carbón(grelhados) / Periañez Ría Brasas(grelhados moderno)",
+        title: (
+          <>
+            Jantar{" "}
+            <MapsLinkedName nome="Meson Diego Punta Umbria">
+              Meson Diego
+            </MapsLinkedName>{" "}
+            /{" "}
+            <MapsLinkedName nome="Al Carbón Punta Umbria">
+              Al Carbón
+            </MapsLinkedName>{" "}
+            (grelhados) /{" "}
+            <MapsLinkedName nome="Periañez Ría Brasas Punta Umbria">
+              Periañez Ría Brasas
+            </MapsLinkedName>{" "}
+            (grelhados moderno)
+          </>
+        ),
         text: "Opção simples e barata para começar a viagem sem gastar muito e sem perder tempo.",
         icon: Utensils,
       },
@@ -94,7 +123,22 @@ const itinerary = [
       },
       {
         time: "13:00",
-        title: "Almoço na Bodeguita la Mantilla / Vaivén Arroces y Paellas / Restaurante Periañez(barat)",
+        title: (
+          <>
+            Almoço na{" "}
+            <MapsLinkedName nome="Bodeguita La Mantilla Sevilla">
+              Bodeguita La Mantilla
+            </MapsLinkedName>{" "}
+            /{" "}
+            <MapsLinkedName nome="Vaiven Arroces y Paellas Sevilla">
+              Vaivén Arroces y Paellas
+            </MapsLinkedName>{" "}
+            /{" "}
+            <MapsLinkedName nome="Restaurante Periañez Sevilla">
+              Restaurante Periañez (barato)
+            </MapsLinkedName>
+          </>
+        ),
         text: "Paragem de comida calma, sem pressa e com vista para a costa.",
         icon: Utensils,
       },
@@ -112,7 +156,23 @@ const itinerary = [
       },
       {
         time: "21:30",
-        title: "Jantar Meson Diego / Al Carbón(grelhados) / Periañez Ría Brasas(grelhados moderno)",
+        title: (
+          <>
+            Jantar{" "}
+            <MapsLinkedName nome="Meson Diego Punta Umbria">
+              Meson Diego
+            </MapsLinkedName>{" "}
+            /{" "}
+            <MapsLinkedName nome="Al Carbón Punta Umbria">
+              Al Carbón
+            </MapsLinkedName>{" "}
+            (grelhados) /{" "}
+            <MapsLinkedName nome="Periañez Ría Brasas Punta Umbria">
+              Periañez Ría Brasas
+            </MapsLinkedName>{" "}
+            (grelhados moderno)
+          </>
+        ),
         text: "Um jantar simples, sem agenda, para fechar o dia como se fosse uma pausa de férias.",
         icon: Utensils,
       },
@@ -143,7 +203,22 @@ const itinerary = [
       },
       {
         time: "13:00",
-        title: "Almoço na Bodeguita la Mantilla / Vaivén Arroces y Paellas / Restaurante Periañez(barato)",
+        title: (
+          <>
+            Almoço na{" "}
+            <MapsLinkedName nome="Bodeguita La Mantilla Sevilla">
+              Bodeguita La Mantilla
+            </MapsLinkedName>{" "}
+            /{" "}
+            <MapsLinkedName nome="Vaiven Arroces y Paellas Sevilla">
+              Vaivén Arroces y Paellas
+            </MapsLinkedName>{" "}
+            /{" "}
+            <MapsLinkedName nome="Restaurante Periañez Sevilla">
+              Restaurante Periañez (barato)
+            </MapsLinkedName>
+          </>
+        ),
         text: "Comer sem pressa e preparar a saída para a cidade.",
         icon: Utensils,
       },
@@ -205,7 +280,27 @@ const itinerary = [
       {
         time: "13:00",
         title: "Santa Cruz (Bairro histórico)",
-        text: "Almoçar por, El Pasaje Tapas (20-30€) / Las Teresas (10-20€) / Chicuelo Bodeguita & Tapa (20-30€) / Atávico | Gastronomía Ancestral by Hotel Elvira Plaza (20-30€).",
+        text: (
+          <>
+            Almoçar por{" "}
+            <MapsLinkedName nome="El Pasaje Tapas Sevilla">
+              El Pasaje Tapas
+            </MapsLinkedName>{" "}
+            (20-30€) /{" "}
+            <MapsLinkedName nome="Las Teresas Sevilla">
+              Las Teresas
+            </MapsLinkedName>{" "}
+            (10-20€) /{" "}
+            <MapsLinkedName nome="Chicuelo Bodeguita Tapas Sevilla">
+              Chicuelo Bodeguita & Tapas
+            </MapsLinkedName>{" "}
+            (20-30€) /{" "}
+            <MapsLinkedName nome="Atavico Gastronomia Ancestral Hotel Elvira Plaza Sevilla">
+              Atávico | Gastronomía Ancestral by Hotel Elvira Plaza
+            </MapsLinkedName>{" "}
+            (20-30€).
+          </>
+        ),
         icon: MapPin,
       },
       {
@@ -229,7 +324,7 @@ const itinerary = [
     ],
     note: "Sevilha pede andar, parar e olhar cada esquina como se fosse um cenário.",
   },
-  {  
+  {
     id: 5,
     destination: "Sevilha",
     shortDestination: "Sevilha",
