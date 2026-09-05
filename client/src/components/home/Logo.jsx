@@ -6,8 +6,8 @@ export function Logo() {
         <span />
       </span>
       <span className="brand-copy">
-        <strong>Maré &amp; Azulejo</strong>
-        <small>Andaluzia em 05 dias</small>
+        <strong>Do sal ao sol</strong>
+        <small>Viagem em 05 dias</small>
       </span>
     </a>
   );
