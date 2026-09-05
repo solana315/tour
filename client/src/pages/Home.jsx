@@ -234,12 +234,35 @@ const itinerary = [
         text: "Descansar, guardar as malas e preparar a primeira noite na cidade.",
         icon: Hotel,
       },
-      {
-        time: "21:00",
-        title: "Passeio noturno por Santa Cruz + centro",
-        text: "Andar pelas ruas mais bonitas da cidade antes de jantar e sentir o clima de Sevilha.",
-        icon: Navigation,
-      },
+{
+  time: "21:00",
+  title: "Passeio noturno por Santa Cruz + centro",
+  text: (
+    <>
+      Andar pelas ruas mais bonitas da cidade antes de jantar e sentir o clima
+      de Sevilha.
+      <br />
+      Jantar por{" "}
+      <MapsLinkedName nome="El Pasaje Tapas Sevilla">
+        El Pasaje Tapas
+      </MapsLinkedName>{" "}
+      (20-30€) /{" "}
+      <MapsLinkedName nome="Las Teresas Sevilla">
+        Las Teresas
+      </MapsLinkedName>{" "}
+      (10-20€) /{" "}
+      <MapsLinkedName nome="Chicuelo Bodeguita Tapas Sevilla">
+        Chicuelo Bodeguita & Tapas
+      </MapsLinkedName>{" "}
+      (20-30€) /{" "}
+      <MapsLinkedName nome="Atavico Gastronomia Ancestral Hotel Elvira Plaza Sevilla">
+        Atávico | Gastronomía Ancestral by Hotel Elvira Plaza
+      </MapsLinkedName>{" "}
+      (20-30€).
+    </>
+  ),
+  icon: Navigation,
+},
       {
         time: "22:30",
         title: "Tapas",
