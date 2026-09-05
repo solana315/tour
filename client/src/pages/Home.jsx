@@ -100,8 +100,8 @@ const itinerary = [
       },
       {
         time: "16:00",
-        title: "Tarde tranquila na praia ou Los Enebrales",
-        text: "Escolher entre descansar na praia ou ir para uma zona mais calma e menos movimentada.",
+        title: "Tarde na praia ou caminhada por Los Enebrales (na praia)",
+        text: "Escolher entre descansar na praia ou ir para uma zona mais calma e menos movimentada, centros por perto como lagoh shopping center ou Los Arcos.",
         icon: Palmtree,
       },
       {
@@ -204,19 +204,19 @@ const itinerary = [
       },
       {
         time: "13:00",
-        title: "Santa Cruz",
-        text: "Andar pelos bairros históricos, rua por rua, com pequenos momentos de pausa.",
+        title: "Santa Cruz (Bairro histórico)",
+        text: "Almoçar por, El Pasaje Tapas (20-30€) / Las Teresas (10-20€) / Chicuelo Bodeguita & Tapa (20-30€) / Atávico | Gastronomía Ancestral by Hotel Elvira Plaza (20-30€).",
         icon: MapPin,
       },
       {
         time: "15:30",
-        title: "Catedral / Giralda",
-        text: "Aproveitar a parte histórica e subir para ver a cidade de cima.",
+        title: "Catedral Giralda (17€), ",
+        text: "Ver de fora ou passear por arredores.",
         icon: Compass,
       },
       {
         time: "18:30",
-        title: "Triana + rio Guadalquivir",
+        title: "Mercado de Triana + rio Guadalquivir",
         text: "À tarde, vale a pena ir para a zona de Triana e ver o rio no fim do dia.",
         icon: Navigation,
       },
@@ -269,8 +269,8 @@ const itinerary = [
 ];
 
 const destinations = [
-  { name: "Punta Umbría", days: "03 dias", range: [1, 3], color: "sea" },
-  { name: "Sevilha", days: "02 dias", range: [4, 5], color: "terra" },
+  { name: "Punta Umbría", days: "02 dias e meio", range: [1, 3], color: "sea" },
+  { name: "Sevilha", days: "02 dias e meio", range: [4, 5], color: "terra" },
 ];
 
 export default function Home() {
@@ -295,7 +295,7 @@ export default function Home() {
   };
 
   const copyRoute = async () => {
-    const text = "Maré & Azulejo: 3 dias em Punta Umbría + 2 dias em Sevilha.";
+    const text = "Do Sal ao Sol: 2 dias e meio em Punta Umbría + 2 dias e meio em Sevilha.";
     try {
       await navigator.clipboard.writeText(text);
     } catch {
